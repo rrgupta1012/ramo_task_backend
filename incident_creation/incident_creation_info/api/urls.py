@@ -8,7 +8,7 @@ from .views import (
 )
 
 router = DefaultRouter()
-router.register('posts', IncidentCreationInfoViewSet, basename='post')
+router.register('incidents', IncidentCreationInfoViewSet, basename='incident')
 urlpatterns = [
     path('', include(router.urls)),
 ]
